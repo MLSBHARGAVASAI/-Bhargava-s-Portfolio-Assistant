@@ -17,6 +17,7 @@ body {
   margin: 20px auto;
   overflow: hidden;
   border: 2px solid #ddd;
+  width: 90%; /* scale for smaller screens */
 }
 
 .chat-header {
@@ -101,4 +102,62 @@ a {
 
 a:hover {
   color: #ffb347; /* solid orange on hover */
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .chat-container {
+    height: 90vh;
+    max-width: 95%;
+    border-radius: 15px;
+  }
+
+  .chat-header {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .chat-input input {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .chat-input button {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+
+  .bot-message .bubble,
+  .user-message .bubble {
+    max-width: 90%;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-container {
+    height: 95vh;
+    border-radius: 10px;
+  }
+
+  .chat-header {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .chat-input input {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .chat-input button {
+    font-size: 13px;
+    padding: 0 12px;
+  }
+
+  .bot-message .bubble,
+  .user-message .bubble {
+    max-width: 100%;
+    padding: 8px 12px;
+  }
 }
