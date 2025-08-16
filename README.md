@@ -37,7 +37,8 @@ For example:
 
 ## Demo
 
-Try it live here: [Meow Games](https://meowgames.netlify.app/)  
+Try the chatbot live here: [Bhargava's Portfolio Chatbot](https://mlsbhargavasai.github.io/-Bhargava-s-Portfolio-Assistant/)
+
 
 ---
 
